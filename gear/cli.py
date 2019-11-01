@@ -1,11 +1,11 @@
 import click
 import requests
-from .thor.client import thor
-from .thor.account import (
+from thor.client import thor
+from thor.account import (
     solo,
     keystore as _keystore,
 )
-from .rpc import make_version
+from rpc import make_version
 from aiohttp import web
 from jsonrpcserver import async_dispatch
 

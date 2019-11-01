@@ -1,5 +1,5 @@
 import json
-from gear.utils.keystore import (
+from utils.keystore import (
     decode_keystore_json,
     priv_to_addr,
 )

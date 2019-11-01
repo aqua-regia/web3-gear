@@ -4,9 +4,9 @@ import logging
 import sys
 import json
 import traceback
-from .thor.client import thor
-from .utils.compat import noop
-from .utils.types import (
+from thor.client import thor
+from utils.compat import noop
+from utils.types import (
     encode_number,
     force_obj_to_text,
     normalize_block_identifier,
@@ -129,7 +129,7 @@ async def evm_revert(snapshot_idx=None):
 # web3
 #
 def make_version():
-    from . import __version__
+    from gear import __version__
     return "Web3-Gear/" + __version__ + "/{platform}/python{v.major}.{v.minor}.{v.micro}".format(
         v=sys.version_info,
         platform=sys.platform,

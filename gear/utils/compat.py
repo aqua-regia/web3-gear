@@ -7,9 +7,8 @@ from rlp.sedes import (
     big_endian_int,
     binary
 )
-from .keystore import sha3
-from .types import (
-    bytearray_to_bytestr,
+from utils.keystore import sha3
+from utils.types import (
     decode_hex,
     encode_hex,
     encode_number

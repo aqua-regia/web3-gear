@@ -9,7 +9,7 @@ from Crypto.Hash import (
     SHA256,
     keccak,
 )
-from gear.utils.types import (
+from utils.types import (
     encode_hex,
     decode_hex,
     big_endian_to_int

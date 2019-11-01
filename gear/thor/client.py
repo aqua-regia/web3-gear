@@ -1,12 +1,12 @@
 import rlp
 import uuid
-from gear.utils.singleton import Singleton
-from gear.utils.types import (
+from utils.singleton import Singleton
+from utils.types import (
     encode_number,
     encode_hex,
     strip_0x
 )
-from gear.utils.compat import (
+from utils.compat import (
     thor_block_convert_to_eth_block,
     thor_receipt_convert_to_eth_receipt,
     thor_tx_convert_to_eth_tx,
@@ -15,7 +15,8 @@ from gear.utils.compat import (
     ThorTransaction,
     intrinsic_gas,
 )
-from .request import (
+
+from thor.request import (
     Restful,
     get,
     post,
